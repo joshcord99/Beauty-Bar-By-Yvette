@@ -1,13 +1,22 @@
+import { Link } from "react-router-dom";
+
 function Navbar() {
   return (
     <>
       <nav>
         <ul>
         <li>
-            <a href="../pages/contact.tsx">Contact</a>
+            <Link to="/specials">Specials</Link>
           </li>
           <li>
-            <a href="../pages/services.tsx">Services </a>
+            <Link to="/contact">Contact</Link>
+          </li>
+          <li>
+            <Link to="/services">Services</Link>
+          </li>
+
+          <li>
+            <Link to="/hoursofoperation">Hours</Link>
           </li>
           <li>
             <a href="https://bookwithsolashy.as.me/schedule/7156e9af">
@@ -15,7 +24,7 @@ function Navbar() {
             </a>
           </li>
           <li>
-            <a href="../pages/about.tsx">About Beauty Bar By Yvette</a>
+            <Link to="/home">Home</Link>
           </li>
         </ul>
       </nav>

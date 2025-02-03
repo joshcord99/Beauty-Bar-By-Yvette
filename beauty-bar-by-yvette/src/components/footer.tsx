@@ -1,12 +1,15 @@
+import { Link } from "react-router-dom";
+
 function Footer() {
+  return (
+    <>
+      <ul>
+        <li>
+          <Link to="/termsofservice">Terms of Services</Link>
+        </li>
+      </ul>
+    </>
+  );
+}
 
-
-    return (
-      <>
-  
-      </>
-    )
-  }
-  
-  export default Footer;
-  
+export default Footer;
