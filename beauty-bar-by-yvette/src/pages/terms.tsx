@@ -1,56 +1,66 @@
 function Terms() {
   return (
-    <>
-      <h1>Terms of Service</h1>
+    <div className="container mx-auto p-6 max-w-3xl">
+      <h1 className="text-3xl font-bold text-center mb-6">Terms of Service</h1>
 
-      <h2>Cancellation Policy:</h2>
-      <h3>ALL CLIENTS are required to cancel appointments 24 HRS IN ADVANCE</h3>
+      {/* Cancellation Policy */}
+      <section className="mb-6">
+        <h2 className="text-xl font-semibold mb-2 text-gray-700">Cancellation Policy</h2>
+        <p className="text-gray-600">
+          <strong>ALL CLIENTS</strong> are required to cancel appointments <strong>24 HRS IN ADVANCE</strong>.
+        </p>
+      </section>
 
-      <h2>Cancellation Policy:</h2>
+      {/* Late Policy */}
+      <section className="mb-6">
+        <h2 className="text-xl font-semibold mb-2 text-gray-700">Late Policy</h2>
+        <p className="text-gray-600">
+          Each client will receive a <strong>10-minute grace period</strong>. After 10 minutes, a 
+          <strong> $15 late fee</strong> will be applied. If more than <strong>15 minutes late</strong>, your 
+          appointment will be terminated, and you must make a new deposit.
+        </p>
+      </section>
 
-      <h2>Late Policy:</h2>
-      <h3>
-        Each client will receive a 10 minute grace period. After 10 minutes
-        there will be a $15 dollar late fee applied to your total cost of
-        service. Your appointment will be terminated after 15 minutes of
-        lateness and you will need to make a new deposit.
-      </h3>
-      <h2>No Show Policy:</h2>
-      <h3>
-        ** NO CALL NO SHOWS WILL NOT BE TOLERATED ** No shows will be charges
-        50% of their service and will be BANNED from booking any future
-        appointments.
-      </h3>
+      {/* No Show Policy */}
+      <section className="mb-6">
+        <h2 className="text-xl font-semibold mb-2 text-gray-700">No Show Policy</h2>
+        <p className="text-gray-600">
+          <strong className="text-red-600">NO CALL, NO SHOWS WILL NOT BE TOLERATED.</strong> 
+          A <strong>50% charge</strong> of the service will be applied, and future bookings will be <strong>BANNED</strong>.
+        </p>
+      </section>
 
-      <h2>Refill Policy:</h2>
-      <h3>
-        ALL NEW CLIENTS must come with absolutely no previous lash extensions on
-        that were not done by me. I do not perform refill services on work that
-        was not done with me. NO EXCEPTIONS. If you currently have lash
-        extensions on, you must get them removed before receiving your new set.
-        ** If more than 50% of your lashes are detached or grown out it will be
-        considered a new full set of lashes. ** 2 Week Fills: No more than 30%
-        loss of initial set 3/4 Week Fills: No more than 50% loss of initial set
-        5+ Week Fills: You will need a new full set of lashes. Even if you have
-        lash retention, lashes need maintenance at least once a month to ensure
-        your lashes are happy and healthy. We must remove lashes that are grown
-        out.
-      </h3>
+      {/* Refill Policy */}
+      <section className="mb-6">
+        <h2 className="text-xl font-semibold mb-2 text-gray-700">Refill Policy</h2>
+        <p className="text-gray-600">
+          <strong>NEW CLIENTS</strong> must have no previous lash extensions done elsewhere.
+          <br />** If more than <strong>50%</strong> of your lashes are detached or grown out, it will be considered a full set. **
+        </p>
+        <ul className="list-disc ml-6 text-gray-600 mt-2">
+          <li><strong>2 Week Fills:</strong> No more than <strong>30%</strong> loss</li>
+          <li><strong>3/4 Week Fills:</strong> No more than <strong>50%</strong> loss</li>
+          <li><strong>5+ Week Fills:</strong> Requires a full new set</li>
+        </ul>
+      </section>
 
-      <h2>Additional Information</h2>
-      <h3>
-        I accept cash for the remaining balance as form of payment. **
-        PREFERABLY CASH **
-        **Starting March 1st, 2023, there will be an additional fee with all card payments due to increased processing fees **
-      </h3>
+      {/* Additional Information */}
+      <section className="mb-6">
+        <h2 className="text-xl font-semibold mb-2 text-gray-700">Additional Information</h2>
+        <p className="text-gray-600">
+          <strong>Preferred payment:</strong> Cash. Starting <strong>March 1st, 2023</strong>, card payments will have an additional processing fee.
+        </p>
+      </section>
 
-      <h2>Exceptions</h2>
-      <h3>
-      Please reach out via Text or DM so we can book accordingly as the schedule for either location is still in the works! We try our best to book you in the best we can!
-      If you need to book a different time then what is available please reach out to me VIA instagram DM @_SOLASHY I will try my best to accommodate you.
-      If there is a time or day that is not available please do not hesitate to DM or Text/Email as we may be able to accommodate you even if it isn't the weekend or before and after hours. This is for both locations.*</h3>
-
-    </>
+      {/* Exceptions */}
+      <section className="mb-6">
+        <h2 className="text-xl font-semibold mb-2 text-gray-700">Exceptions</h2>
+        <p className="text-gray-600">
+          If you need a different time, please reach out via <strong>Text</strong> or <strong>Instagram DM (@_SOLASHY)</strong>. 
+          We will try to accommodate your request.
+        </p>
+      </section>
+    </div>
   );
 }
 
