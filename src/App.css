@@ -1,0 +1,12 @@
+@import "tailwindcss";
+
+* {
+background-color: pink;
+}
+
+.leaflet-container {
+    width: 40%;
+    height: 250px; 
+    border-radius: 10px; 
+  }
+  
